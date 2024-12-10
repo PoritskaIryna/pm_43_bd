@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cae6539a-8e19-41aa-b76f-00b933a9dff3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Conference DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Conference</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="52eaf1b1-d273-4dad-9992-df5ed17bb09d">
+          <ID>Fact Conference</ID>
+          <Name>Fact Conference</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="59be65b6-74f7-4dd1-b1dc-6e0535b4615b">
+            <DataSourceViewID>Conference DW</DataSourceViewID>
+            <TableID>dbo_Fact_Conference</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Speaker</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="eadb7aa1-bd92-41b0-9b01-3b5edba8f87e">
+          <ID>Dim Speaker</ID>
+          <Name>Dim Speaker</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="02e1a500-1784-4e3c-9c4c-24d46b71da4e">
+            <DataSourceViewID>Conference DW</DataSourceViewID>
+            <TableID>dbo_Dim_Speaker</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Presentation</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8d888e88-cb46-4ae4-9a43-72f904fb6bff">
+          <ID>Dim Presentation</ID>
+          <Name>Dim Presentation</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3a183417-cf3a-4c4d-b9c1-df979cc50731">
+            <DataSourceViewID>Conference DW</DataSourceViewID>
+            <TableID>dbo_Dim_Presentation</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Conference 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0779eb1e-edba-49d0-b47b-cbf3b81a8f28">
+          <ID>Fact Conference</ID>
+          <Name>Fact Conference</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ea307a15-8c95-4bb3-a254-260c9e5688c0">
+            <DataSourceViewID>Conference DW</DataSourceViewID>
+            <TableID>dbo_Fact_Conference</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\kursova\\conference_ssas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA81386-C885-4DAA-A891-4834C06826B1}|conference_ssas\\conference_ssas.dwproj|D:\\kursova\\conference_ssas\\conference_ssas\\Conference DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{ADA81386-C885-4DAA-A891-4834C06826B1}|conference_ssas\\conference_ssas.dwproj|solutionrelative:conference_ssas\\Conference DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA81386-C885-4DAA-A891-4834C06826B1}|conference_ssas\\conference_ssas.dwproj|D:\\kursova\\conference_ssas\\conference_ssas\\Conference DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{ADA81386-C885-4DAA-A891-4834C06826B1}|conference_ssas\\conference_ssas.dwproj|solutionrelative:conference_ssas\\Conference DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA81386-C885-4DAA-A891-4834C06826B1}|conference_ssas\\conference_ssas.dwproj|D:\\kursova\\conference_ssas\\conference_ssas\\Dim Presentation.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{ADA81386-C885-4DAA-A891-4834C06826B1}|conference_ssas\\conference_ssas.dwproj|solutionrelative:conference_ssas\\Dim Presentation.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADA81386-C885-4DAA-A891-4834C06826B1}|conference_ssas\\conference_ssas.dwproj|D:\\kursova\\conference_ssas\\conference_ssas\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{ADA81386-C885-4DAA-A891-4834C06826B1}|conference_ssas\\conference_ssas.dwproj|solutionrelative:conference_ssas\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 369,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Conference DW.dsv [Design]",
+              "DocumentMoniker": "D:\\kursova\\conference_ssas\\conference_ssas\\Conference DW.dsv",
+              "RelativeDocumentMoniker": "conference_ssas\\Conference DW.dsv",
+              "ToolTip": "D:\\kursova\\conference_ssas\\conference_ssas\\Conference DW.dsv [Design]",
+              "RelativeToolTip": "conference_ssas\\Conference DW.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-09T14:33:33.095Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Presentation.dim [Design]",
+              "DocumentMoniker": "D:\\kursova\\conference_ssas\\conference_ssas\\Dim Presentation.dim",
+              "RelativeDocumentMoniker": "conference_ssas\\Dim Presentation.dim",
+              "ToolTip": "D:\\kursova\\conference_ssas\\conference_ssas\\Dim Presentation.dim [Design]",
+              "RelativeToolTip": "conference_ssas\\Dim Presentation.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-09T14:33:29.232Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Conference DW.cube [Design]",
+              "DocumentMoniker": "D:\\kursova\\conference_ssas\\conference_ssas\\Conference DW.cube",
+              "RelativeDocumentMoniker": "conference_ssas\\Conference DW.cube",
+              "ToolTip": "D:\\kursova\\conference_ssas\\conference_ssas\\Conference DW.cube [Design]",
+              "RelativeToolTip": "conference_ssas\\Conference DW.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-09T09:20:47.302Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Date.dim [Design]",
+              "DocumentMoniker": "D:\\kursova\\conference_ssas\\conference_ssas\\Dim Date.dim",
+              "RelativeDocumentMoniker": "conference_ssas\\Dim Date.dim",
+              "ToolTip": "D:\\kursova\\conference_ssas\\conference_ssas\\Dim Date.dim [Design]",
+              "RelativeToolTip": "conference_ssas\\Dim Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-09T14:33:24.21Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

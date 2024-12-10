@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet3">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Speaker'[Speaker Name], 'Dim Speaker'[Profecional Biography], FILTER(VALUES('Dim Building'[Bl Address]), ('Dim Building'[Bl Address] = "113 West White Fabien Parkway")), FILTER(VALUES('Dim Presentation'[Topic]), ('Dim Presentation'[Topic] = "Sales")), FILTER(VALUES('Dim Section'[Title]), ('Dim Section'[Title] = "BusinessSales")))</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Speaker</DimensionName>
+                    <HierarchyName>Speaker Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Speaker].[Speaker Name]</HierarchyUniqueName>
+                    <LevelName>Speaker Name</LevelName>
+                    <UniqueName>[Dim Speaker].[Speaker Name].[Speaker Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Speaker Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Speaker</DimensionName>
+                    <HierarchyName>Profecional Biography</HierarchyName>
+                    <HierarchyUniqueName>[Dim Speaker].[Profecional Biography]</HierarchyUniqueName>
+                    <LevelName>Profecional Biography</LevelName>
+                    <UniqueName>[Dim Speaker].[Profecional Biography].[Profecional Biography]</UniqueName>
+                  </ID>
+                  <ItemCaption>Profecional Biography</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Conference DW</From>
+            <Filter>
+              <FilterItems>
+                <FilterItem>
+                  <HierarchyUniqueName>[Dim Building].[Bl Address]</HierarchyUniqueName>
+                  <Condition xsi:type="EqualTo">
+                    <Members>
+                      <Member>
+                        <MemberUniqueName>[Dim Building].[Bl Address].&amp;[113 West White Fabien Parkway]</MemberUniqueName>
+                      </Member>
+                    </Members>
+                  </Condition>
+                </FilterItem>
+                <FilterItem>
+                  <HierarchyUniqueName>[Dim Presentation].[Topic]</HierarchyUniqueName>
+                  <Condition xsi:type="EqualTo">
+                    <Members>
+                      <Member>
+                        <MemberUniqueName>[Dim Presentation].[Topic].&amp;[Sales]</MemberUniqueName>
+                      </Member>
+                    </Members>
+                  </Condition>
+                </FilterItem>
+                <FilterItem>
+                  <HierarchyUniqueName>[Dim Section].[Title]</HierarchyUniqueName>
+                  <Condition xsi:type="EqualTo">
+                    <Members>
+                      <Member>
+                        <MemberUniqueName>[Dim Section].[Title].&amp;[BusinessSales]</MemberUniqueName>
+                      </Member>
+                    </Members>
+                  </Condition>
+                </FilterItem>
+              </FilterItems>
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Speaker'[Speaker Name], 'Dim Speaker'[Profecional Biography], FILTER(VALUES('Dim Building'[Bl Address]), ('Dim Building'[Bl Address] = "113 West White Fabien Parkway")), FILTER(VALUES('Dim Presentation'[Topic]), ('Dim Presentation'[Topic] = "Sales")), FILTER(VALUES('Dim Section'[Title]), ('Dim Section'[Title] = "BusinessSales")))</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Speaker_Name">
+        <DataField>Dim Speaker[Speaker Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Profecional_Biography">
+        <DataField>Dim Speaker[Profecional Biography]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

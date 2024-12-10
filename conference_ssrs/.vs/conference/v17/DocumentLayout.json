@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\kursova\\conference\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0E0D56-EF42-40B1-9F36-A5C20AC4EE0E}|conference\\conference.rptproj|D:\\kursova\\conference\\conference\\Report3.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{6D0E0D56-EF42-40B1-9F36-A5C20AC4EE0E}|conference\\conference.rptproj|solutionrelative:conference\\Report3.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0E0D56-EF42-40B1-9F36-A5C20AC4EE0E}|conference\\conference.rptproj|D:\\kursova\\conference\\conference\\Report2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{6D0E0D56-EF42-40B1-9F36-A5C20AC4EE0E}|conference\\conference.rptproj|solutionrelative:conference\\Report2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0E0D56-EF42-40B1-9F36-A5C20AC4EE0E}|conference\\conference.rptproj|D:\\kursova\\conference\\conference\\Report1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{6D0E0D56-EF42-40B1-9F36-A5C20AC4EE0E}|conference\\conference.rptproj|solutionrelative:conference\\Report1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 369,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Report3.rdl [Design]",
+              "DocumentMoniker": "D:\\kursova\\conference\\conference\\Report3.rdl",
+              "RelativeDocumentMoniker": "conference\\Report3.rdl",
+              "ToolTip": "D:\\kursova\\conference\\conference\\Report3.rdl [Design]",
+              "RelativeToolTip": "conference\\Report3.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-09T11:43:02.276Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Report2.rdl [Design]",
+              "DocumentMoniker": "D:\\kursova\\conference\\conference\\Report2.rdl",
+              "RelativeDocumentMoniker": "conference\\Report2.rdl",
+              "ToolTip": "D:\\kursova\\conference\\conference\\Report2.rdl [Design]",
+              "RelativeToolTip": "conference\\Report2.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-09T11:17:31.142Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Report1.rdl [Design]",
+              "DocumentMoniker": "D:\\kursova\\conference\\conference\\Report1.rdl",
+              "RelativeDocumentMoniker": "conference\\Report1.rdl",
+              "ToolTip": "D:\\kursova\\conference\\conference\\Report1.rdl [Design]",
+              "RelativeToolTip": "conference\\Report1.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-09T09:46:03.178Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Speaker'[Speaker Name], 'Dim Speaker'[Degree], 'Dim Speaker'[Work Place], 'Dim Speaker'[Position], FILTER(VALUES('Fact Conference'[Title]), ('Fact Conference'[Title] = "SQL Server Statistics")))</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Speaker</DimensionName>
+                    <HierarchyName>Speaker Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Speaker].[Speaker Name]</HierarchyUniqueName>
+                    <LevelName>Speaker Name</LevelName>
+                    <UniqueName>[Dim Speaker].[Speaker Name].[Speaker Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Speaker Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Speaker</DimensionName>
+                    <HierarchyName>Degree</HierarchyName>
+                    <HierarchyUniqueName>[Dim Speaker].[Degree]</HierarchyUniqueName>
+                    <LevelName>Degree</LevelName>
+                    <UniqueName>[Dim Speaker].[Degree].[Degree]</UniqueName>
+                  </ID>
+                  <ItemCaption>Degree</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Speaker</DimensionName>
+                    <HierarchyName>Work Place</HierarchyName>
+                    <HierarchyUniqueName>[Dim Speaker].[Work Place]</HierarchyUniqueName>
+                    <LevelName>Work Place</LevelName>
+                    <UniqueName>[Dim Speaker].[Work Place].[Work Place]</UniqueName>
+                  </ID>
+                  <ItemCaption>Work Place</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Speaker</DimensionName>
+                    <HierarchyName>Position</HierarchyName>
+                    <HierarchyUniqueName>[Dim Speaker].[Position]</HierarchyUniqueName>
+                    <LevelName>Position</LevelName>
+                    <UniqueName>[Dim Speaker].[Position].[Position]</UniqueName>
+                  </ID>
+                  <ItemCaption>Position</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Conference DW</From>
+            <Filter>
+              <FilterItems>
+                <FilterItem>
+                  <HierarchyUniqueName>[Fact Conference].[Title]</HierarchyUniqueName>
+                  <Condition xsi:type="EqualTo">
+                    <Members>
+                      <Member>
+                        <MemberUniqueName>[Fact Conference].[Title].&amp;[SQL Server Statistics]</MemberUniqueName>
+                      </Member>
+                    </Members>
+                  </Condition>
+                </FilterItem>
+              </FilterItems>
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Speaker'[Speaker Name], 'Dim Speaker'[Degree], 'Dim Speaker'[Work Place], 'Dim Speaker'[Position], FILTER(VALUES('Fact Conference'[Title]), ('Fact Conference'[Title] = "SQL Server Statistics")))</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Speaker_Name">
+        <DataField>Dim Speaker[Speaker Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Degree">
+        <DataField>Dim Speaker[Degree]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Work_Place">
+        <DataField>Dim Speaker[Work Place]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Position">
+        <DataField>Dim Speaker[Position]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
